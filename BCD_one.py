@@ -19,12 +19,12 @@ def BCD_one(R, U, V, theta, lambda_u, lambda_v, dir_save='.',
     for it in range(num_iter):
         U_sq = U*U.T*b
         for j in range(num_v):
-            idx_a = np.where(R[:,j]>0)[0].A1
+            idx_a = np.where(R[:,j]>0)[0]#.A1
             U_cut = U[:,idx_a]
             V[:,j] = np.linalg.pinv(U_sq+U_cut*U_cut.T*a_m_b+I_v)*(U_cut*R[idx_a,j]+lambda_v*theta[:,j])
         V_sq = V*V.T*b
         for i in range(num_u):
-            idx_a = np.where(R[i,:]>0)[1].A1
+            idx_a = np.where(R[i,:]>0)[1]#.A1
             V_cut = V[:,idx_a]
             U[:,i] = np.linalg.pinv(V_sq+V_cut*V_cut.T*a_m_b+I_u)*(V_cut*R[i,idx_a].T)
         if it%10==9:

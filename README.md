@@ -3,3 +3,5 @@ This is the MXNet version of CDL used in the KDD 2016 hands-on tutorial for MXNe
 To run the code, please type in (after installing MXNet):
 python cdl.py
 in the command line.
+
+More details on the work and some direct extensions can be found at http://wanghao.in/CDL.htm.

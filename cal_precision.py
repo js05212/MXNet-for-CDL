@@ -16,7 +16,8 @@ def cal_precision(p,cut):
         pl = sorted(enumerate(l_score),key=lambda d:d[1],reverse=True)
         l_rec = list(zip(*pl)[0])[:cut]
         s_rec = set(l_rec)
-        s_true = set(np.where(R_true[i,:]>0)[1].A1)
+        #_true = set(np.where(R_true[i,:]>0)[1].A1)
+		s_true = set(np.where(R_true[i,:]>0)[1])
         cnt_hit = len(s_rec.intersection(s_true))
         num_hit += cnt_hit
         fp.write('%d:' % cnt_hit)

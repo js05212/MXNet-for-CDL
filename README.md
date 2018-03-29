@@ -7,7 +7,9 @@ in the command line.
 More details on the work and some direct extensions can be found at http://wanghao.in/CDL.htm.
 
 Matlab version for full CDL: https://github.com/js05212/CDL.
+
 Data: https://www.wanghao.in/data/ctrsr_datasets.rar.
+
 Slides: http://wanghao.in/slides/CDL_slides.pdf and http://wanghao.in/slides/CDL_slides_long.pdf.
 
 #### Reference:
